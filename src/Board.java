@@ -243,11 +243,11 @@ public class Board {
   boolean collisions(Piece piece) {
     if (piece.getName().equalsIgnoreCase("p ")) {
       if (newRow - lastRow > 0) {
-        for (int i = newRow + 1; i < lastRow; i++) {
+        for (int i = lastRow + 1; i < newRow; i++) {
           if (pieces[i][lastColumn] != null) return true;
         }
       } else if (newRow - lastRow < 0) {
-        for (int i = lastRow + 1; i < newRow; i++) {
+        for (int i = newRow + 1; i < lastRow; i++) {
           if (pieces[i][lastColumn] != null) return true;
         }
       }

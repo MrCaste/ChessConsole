@@ -348,6 +348,7 @@ public class Board {
     if (collisions(piece)) {
       System.out.println("\nInvalid position");
       askGetPiece();
+      getPiece(getCoordinate());
       askMovePiece();
       setPiece(getNewCoordinate(), getActualPiece());
     } else if (pieces[newRow][newColumn] != null
@@ -379,6 +380,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -391,6 +393,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -402,6 +405,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -413,6 +417,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -425,6 +430,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -437,6 +443,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -448,6 +455,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -459,6 +467,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -472,6 +481,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -485,6 +495,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -498,6 +509,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -511,6 +523,7 @@ public class Board {
       } else {
         System.out.println("Invalid movement");
         askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
       }
@@ -1104,6 +1117,8 @@ public class Board {
         break;
       default:
         System.out.println("Invalid coordinate");
+        askGetPiece();
+        getPiece(getCoordinate());
         askMovePiece();
         setPiece(getNewCoordinate(), getActualPiece());
         break;
